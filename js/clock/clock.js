@@ -1,5 +1,5 @@
 function setup() {
-	createCanvas(windowWidth,windowHeight);
+	createCanvas(200,100);
 }
 
 function draw() {
@@ -12,6 +12,7 @@ function draw() {
 	var min = minute();
 	var sec = second();
 
+	textAlign(CENTER);
 	text("date is " + m + " " + d + " " + y + " " , 5, 40);
 	text("time is " + h + " " + min + " " + sec + " ", 5, 50);
 }
