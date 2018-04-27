@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+div.container {
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
+}
+
+header, footer {
+    margin: 0;
+    /*padding-bottom: 2%;*/
+    color: white;
+    background-color: black;
+/*    clear: left;*/
+    text-align: center;
+    border: 2px solid yellow
+}
+
+nav {
+    max-width: 100%
+   /* float: top;*/
+    margin: 0;
+	padding:0px;
+    border: 3px solid green;
+    /*padding: 1em;*/
+    overflow:hidden;
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+a {
+    text-decoration:none;
+}
+
+ul {
+/*    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;*/
+}
+
+/*ul a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}*/
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+/*li a:hover {
+    background-color: #111;
+}*/
+
+.active {
+    background-color: #5b794e;
+}
+
+section {
+   /* margin-right: 100px;
+    border-right: 3px solid purple;*/
+    padding: 20px;
+    overflow: hidden;
+}

@@ -1,0 +1,32 @@
+<!--@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+div.container {
+    width: 100%;
+    border: 1px solid red;
+}
+
+header, footer {
+    padding-bottom: 2%;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+    border: 2px solid yellow
+}
+
+nav {
+    float: top;
+    max-width: 100%;
+    margin: 0;
+    border: 3px solid green;
+    /*padding: 1em;*/
+    overflow:hidden;
+    background-color: #333;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
