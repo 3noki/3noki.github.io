@@ -1,131 +1,167 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body {
-  font-family:monospace;
-  text-decoration: none;
-}
-
-.top_container {
+.container {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 0;
+  list-style: none;
   display: flex;
   flex-flow: row wrap;
-  list-style: none;
-  padding: 0;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 77px;
-  height: 77px;
-  text-align: left;
+  background-color: white;
+  font-size: 16px;
+  line-height: 1.2em;
+  justify-content: space-around;
+  align-content: space-around;
+  align-items: center;
 }
 
 .box {
-  text-align: right;
-  padding: 0;
-  margin: 0;
+  flex-flow:column wrap;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  width: 250px;
+  height: 250px;
+  margin-left: 5px;
+  margin-right: 5px;
+  /* padding-top:50px; */
+  line-height: 2em;
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  justify-content: center;
+  align-content: stretch;
+  align-items: stretch;
+  word-wrap: normal;
 }
 
-hr {
-  height: 1px;
-  color: #2d3c49;
-  background-color: #2d3c49;
+ p {
+  position: relative;
+  padding-top: 30%;
+  text-shadow: #000000 3px 3px 3px;
+  }
+
+a {
+  text-decoration: none;
 }
 
-h1, h2, h3, h4 {
-  font-family: monospace;
-  font-weight: lighter;
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 
 h1 {
-  font-size: 50px;
+  font-family: monospace;
+  font-weight: lighter;
+  font-size: 12px;
+  padding-left:6%;
 }
 
-h3 {
-  color: #7d97ad;
-  font-size: 30px;
-  padding-left: 5%;
+header {
+  background-color: #yellow;
+  opacity: .6;
+  width: 100%;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
-h2 {
-  font-size: 26px;
+footer {
+  margin-top: 2em;
 }
 
-h4 {
-  font-size: 18px;
-  color: black;
+.project_1_site {
+  background-image: url("../img/code_3.png");
+  opacity: .8;
+  background-size: cover;
 }
 
- .picture {
-   background-image: url("../img/code-200x110.png");
-   width: 100%;
-   height: 110px;
-   background-size: cover;
-  }
-
-@media screen and (min-width:310px)
-{
-  .picture {
-    background-image: url("../img/code-300x200.png");
-    width: 100%;
-    height: 200px;
-    background-size: cover;
-  }
+.project_2_memory {
+  background-image: url("../img/ram.jpg");
+  opacity: .7;
+  background-size: cover;
 }
 
-@media screen and (min-width:420px)
-{
-   .picture {
-     background-image: url("../img/code-400x260.png");
-     width: 100%;
-     height: 260px;
-     background-size: cover;
-   }
+.project_3_read {
+  background-image: url("../img/read.jpg");
+  opacity: .8;
+  background-size: cover;
 }
 
-@media screen and (min-width:600px)
-{
-   .picture {
-     background-image: url("../img/code-600x280.png");
-     width: 100%;
-     height: 280px;
-     background-size: cover;
-   }
+.project_4_food {
+  background-image: url("../img/restaurant.jpg");
+  opacity: .8;
+  background-size: cover;
 }
 
-@media screen and (min-width:900px)
-{
-   .picture {
-     background-image: url("../img/code-876x370.png");
-     width: 100%;
-     max-width: 876px;
-     height: 370px;
-     background-size: cover;
-     margin:auto;
-   }
+.project_5_map {
+  background-image: url("../img/map.jpg");
+  opacity: .8;
+  background-size: cover;
 }
 
-a, a:hover, a:visited {
-  text-decoration: none;
-  color: black;
+/* NAVIGATION */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
 }
 
-.featured_work_section {
-  max-width: 1000px;
-  margin:auto;
+li {
+    float: left;
 }
 
-.container {
-  padding: 5px;
-  margin: 5px;
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(0,0,0,0.1);
+}
+
+ .navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  color:black;
+  background-color: rgb(255, 255, 255);
+  font-family: monospace;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
 }
 
-.inside_container {
-  flex-flow:column wrap;
-  margin: 2%;
-  text-align: center;
+.navigation a {
+  text-decoration: none;
+  display: block;
+  color: black;
 }
+
+.navigation a:hover {
+  background-color: black;
+  opacity: .2;
+}
+
+.navigation a {
+  border-top: 1px solid rgba(255,255,255,0.1);
+  border-bottom: 0px solid rgba(0,0,0,0.1);
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+  }
+}
+
+  @media screen and (max-width: 800px) {
+    .navigation {
+      justify-content: space-around;
+    }
+  }
 
